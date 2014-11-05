@@ -1,8 +1,8 @@
 """Board class for the scrabble bot."""
 import load
 import sys
+import Trie
 from Tile import Tile
-
 class Board:
   def place_multipliers(self, multipliers):
     mult_loc = {}
@@ -25,9 +25,10 @@ class Board:
     
   def __init__(self):
     self.multipliers, self.alphabet, alpha_count = load.load_game_properties()
+    self.turn_num = 0
+    self.word_dict = Trie.Trie("textfiles/wwf.txt")
     self.BOARD_SIZE = 15
     self.tiles = []
-
     for i in xrange(self.BOARD_SIZE):
       self.tiles.append([])
       for j in xrange(self.BOARD_SIZE):
@@ -43,6 +44,6 @@ class Board:
       print ('\n')
   def place_letter(self, letter, coords):
     self.tiles[coords[0]][coords[1]].set_letter(curr_letter)
-
+    self.turn_num +=1
 b = Board()
 b.print_board()

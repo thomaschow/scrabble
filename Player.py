@@ -12,8 +12,11 @@ class Player:
       self.bag = bag 
     self.total_points = total_points
     self.board = board
+  
+  def generate_possible_words(self, board, hand):
+    for 
+  def start_move(self, board, hand):
 
-  def pick_move(self, board, hand):
-
-    
-
+  def pick_best_move(self, board, hand):
+    move = {} 
+    return move
