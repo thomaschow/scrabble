@@ -53,3 +53,4 @@ class Trie:
       else:
         curr_node = curr_node.get_child(letter)
     return curr_node.is_terminal
+
