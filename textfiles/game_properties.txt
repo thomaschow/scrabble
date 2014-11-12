@@ -6,7 +6,7 @@ double word:@
 triple letter:3
 triple word:#
 Scrabble Alphabet
-!:2:0
+?:2:0
 A:9:1
 B:2:4
 C:2:4

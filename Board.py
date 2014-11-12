@@ -53,22 +53,20 @@ class Board:
   def compute_cross_checks(self):
     directions = [(0,1), (1,0)]
     curr_array = bitarray(26)
+    curr_array.setall(False)
     alphabet = string.lowercase
     for coord in self.empty_coords:
       for direction in directions:
         curr_coord = self.get_next_in_direction(coord, direction, -1)
         left_word = ""
-        if self.within_bounds(curr_coord):
-          while curr_coord not in self.empty_coords:
-            left_word = self.get_tile(curr_coord).get_letter() + left_word
-            curr_coord = self.get_next_in_direction(curr_coord,direction, -1)
+        while self.within_bounds(curr_coord) and curr_coord not in self.empty_coords:
+          left_word = self.get_tile(curr_coord).get_letter() + left_word
+          curr_coord = self.get_next_in_direction(curr_coord,direction, -1)
         right_word = ""
         curr_coord = self.get_next_in_direction(coord, direction, 1)
-        if self.within_bounds(curr_coord):
-          while curr_coord not in self.empty_coords:
-            right_word = right_word + self.get_tile(curr_coord).get_letter()
-            curr_coord = self.get_next_in_direction(curr_coord,direction,1)
-        
+        while self.within_bounds(curr_coord) and curr_coord not in self.empty_coords:
+          right_word = right_word + self.get_tile(curr_coord).get_letter()
+          curr_coord = self.get_next_in_direction(curr_coord,direction,1)
         for i in xrange(len(alphabet)):
           cand_word = left_word + alphabet[i] + right_word
           if self.word_dict.word_exists(cand_word):
