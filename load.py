@@ -24,3 +24,4 @@ def load_dictionary(dic):
     line = line.replace("\n","")
     words.append(line)
   return words
+

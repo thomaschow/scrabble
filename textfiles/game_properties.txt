@@ -1,10 +1,10 @@
 Scrabble Multipliers
-start:st
-single:sl
-double letter:dl
-double word:dw
-triple letter:tl
-triple word:tw
+start:*
+single:.
+double letter:2
+double word:@
+triple letter:3
+triple word:#
 Scrabble Alphabet
 !:2:0
 A:9:1
