@@ -3,8 +3,8 @@ def load_game_properties():
   reading = ""
   curr_elem = []
   multipliers = {}
-  alphabet = {}
-  alpha_count = {}
+  letter_values = {}
+  letters = [] 
   for line in f:
     line = line.replace("\n", "")
     if "Scrabble" in line:
@@ -14,9 +14,9 @@ def load_game_properties():
     if reading == "Multipliers":
       multipliers[curr_elem[0]] = curr_elem[1]
     elif reading == "Alphabet":
-      alphabet[curr_elem[0]] = curr_elem[2]
-      alpha_count[curr_elem[0]] = curr_elem[1]
-  return multipliers, alphabet, alpha_count
+      letter_values[curr_elem[0]] = curr_elem[2]
+      letters = letters + [curr_elem[0].lower()] * int(curr_elem[1])
+  return multipliers, letters, letter_values
 def load_dictionary(dic):
   f = open(dic, 'r')
   words = []

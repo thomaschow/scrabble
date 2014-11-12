@@ -26,7 +26,7 @@ class Board:
     self.tiles[self.BOARD_SIZE / 2][self.BOARD_SIZE / 2].set_multiplier(multipliers["start"]) 
     
   def __init__(self):
-    self.multipliers, self.alphabet, alpha_count = load.load_game_properties()
+    self.multipliers, letters, letter_values = load.load_game_properties()
     self.turn_num = 0
     self.word_dict = Trie("textfiles/wwf.txt")
     self.BOARD_SIZE = 15
@@ -47,7 +47,7 @@ class Board:
           print (self.tiles[i][j].get_letter() + " "),
       print ('\n')
   def get_next_in_direction(self, coord, direction, orient):
-    return (coord[0] + orient * direction[1], coord[1] + orient * direction[1])
+    return (coord[0] + orient * direction[0], coord[1] + orient * direction[1])
   def compute_cross_checks():
     directions = [(0,1), (1,0)]
     curr_array = bitarray(26)
@@ -72,15 +72,14 @@ class Board:
         self.get_tile(coord).fill_cross_check(direction, curr_array)
             
   def place_letter(self, letter, coords):
-    self.tiles[coords[0]][coords[1]].set_letter(curr_letter)
+    self.tiles[coords[0]][coords[1]].set_letter(letter)
     self.empty_coords.remove(coords)
-    self.advance_turn()
   def get_turn(self):
     return self.turn_num
   def advance_turn(self):
     self.turn_num += 1
   def get_start_pos(self):
-    return (BOARD_SIZE / 2, BOARD_SIZE / 2)
+    return (self.BOARD_SIZE / 2, self.BOARD_SIZE / 2)
   def get_dict(self):
     return self.word_dict
   def get_tile(self,coords):
@@ -89,5 +88,3 @@ class Board:
     return self.empty_coords
   def get_turn(self):
     return self.turn_num
-b = Board()
-b.print_board()

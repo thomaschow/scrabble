@@ -3,7 +3,7 @@ import Queue
 
 class Trie_Node:
   
-  def __init__(self, letter, is_terminal):
+  def __init__(self, letter, is_terminal=False):
     self.letter = letter
     self.is_terminal = is_terminal
     self.children = []
@@ -13,7 +13,7 @@ class Trie_Node:
     return self.children
   def get_letter(self):
     return self.letter
-  def is_terminal(self):
+  def is_last_in_word(self):
     return self.is_terminal
   def get_child(self, letter):
     for child in self.children:
