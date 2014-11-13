@@ -42,11 +42,18 @@ class Board:
     return coords[0] >= 0 and coords[0] < self.BOARD_SIZE and coords[1] >= 0 and coords[1] < self.BOARD_SIZE
   def print_board(self): 
     for i in xrange(self.BOARD_SIZE):
+      if i == 0:
+        print("").rjust(3),
+        for j in xrange(self.BOARD_SIZE):
+          print (str(j)).rjust(3),
+        print('\n')
       for j in xrange(self.BOARD_SIZE):
+        if j == 0:
+          print(str(i)).rjust(3),
         if self.tiles[i][j].get_letter() == None:
-          print(self.tiles[i][j].get_multiplier() + "  "),
+          print(self.tiles[i][j].get_multiplier()).rjust(3),
         else:
-          print (self.tiles[i][j].get_letter() + "  "),
+          print (self.tiles[i][j].get_letter()).rjust(3),
       print ('\n')
   def get_next_in_direction(self, coord, direction, orient):
     return (coord[0] + orient * direction[0], coord[1] + orient * direction[1])
@@ -67,10 +74,12 @@ class Board:
         while self.within_bounds(curr_coord) and curr_coord not in self.empty_coords:
           right_word = right_word + self.get_tile(curr_coord).get_letter()
           curr_coord = self.get_next_in_direction(curr_coord,direction,1)
-        for i in xrange(len(alphabet)):
-          cand_word = left_word + alphabet[i] + right_word
-          if self.word_dict.word_exists(cand_word):
-            curr_array[i] = True
+        if left_word != "" or right_word != "":
+          for i in xrange(len(alphabet)):
+            cand_word = left_word + alphabet[i] + right_word
+            curr_array[i] = self.word_dict.word_exists(cand_word)
+        else:
+          curr_array.setall(True)
         self.get_tile(coord).fill_cross_check(direction, curr_array)
             
   def place_letter(self, letter, coords):

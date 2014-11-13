@@ -96,6 +96,7 @@ class Player:
     for i in xrange(len(word)):
       if curr_coords in self.board.empty_coords:
         self.board.place_letter(word[i],curr_coords)
+        print curr_coords, (direction[0]^1, direction[1]^1), self.board.get_tile(curr_coords).get_cross_check_set((direction[0]^1, direction[1]^1)), self.board.get_tile(curr_coords).get_letter()
         self.hand.remove(word[i])
         num_tiles_used += 1
       curr_coords = self.board.get_next_in_direction(curr_coords, direction, 1) 
@@ -105,7 +106,9 @@ class Player:
     self.anchors = self.find_anchors()
     self.board.advance_turn()
 p = Player(hand=['f', 'e', 'n', 'w', 'r', 'i', 'm'])
-for i in xrange(5):
-  print p.hand
+for i in xrange(3):
+  print p.hand, p.curr_legal_moves.keys()
   p.make_move()
+  p.hand = ['f', 'm', 'c','k','s','d','d']
   p.board.print_board()
+

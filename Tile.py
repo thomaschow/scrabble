@@ -23,4 +23,4 @@ class Tile:
   def check_letter_in_cross_check_set(self, direction, letter):
     return self.cross_check_sets[(direction[0] ^1, direction[1] ^1)][self.alphabet.index(letter)]
   def fill_cross_check(self, direction, new_array):
-    self.cross_check_sets[direction] = new_array
+    self.cross_check_sets[direction] = bitarray(new_array)

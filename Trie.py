@@ -44,7 +44,6 @@ class Trie:
         break
       curr_node = curr_node.get_child(letter)
     return curr_node 
-      
   def word_exists(self, word):
     curr_node = self.root
     for letter in word:
@@ -53,4 +52,3 @@ class Trie:
       else:
         curr_node = curr_node.get_child(letter)
     return curr_node.is_terminal
-
