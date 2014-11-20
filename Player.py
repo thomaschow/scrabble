@@ -26,7 +26,20 @@ class Player:
     self.anchors = self.find_anchors() 
     self.curr_legal_moves = {} 
 
-  def compute_move_score(self, start, move_word):
+  def compute_move_score(self, start, move_word, direction):
+    curr_coord = start
+    score = 0
+    """for letter in move_word:
+      #If the letter is already on the board, we just add the letter score, ignoring cross scores and multiplier.
+      if self.board.get_tile(curr_coord).get_letter() == letter:
+        pass
+      #If the letter isn't already on the board, we need to compute cross scores and track the multiplier.
+      elif self.board.get_tile(curr_coord).get_letter() == None:"""
+         
+
+
+      
+    
     return len(move_word) 
     
   def get_left_length(self, board, hand, anchor):
@@ -52,7 +65,7 @@ class Player:
     curr_tile = self.board.get_tile(curr_coords)
     if curr_tile.get_letter() == None:
       if node.is_last_in_word() and tile_placed:
-        self.curr_legal_moves[partial_word] = [self.compute_move_score(start_coords, partial_word), start_coords, direction]
+        self.curr_legal_moves[partial_word] = [self.compute_move_score(start_coords, partial_word, direction), start_coords, direction]
       for child in node.get_children():
         letter_to_place = child.get_letter()
         if (letter_to_place in self.hand or '?' in self.hand) and curr_tile.check_letter_in_cross_check_set(direction,letter_to_place):
@@ -101,6 +114,9 @@ class Player:
             break
         for letter in left_part:
           curr_node = curr_node.get_child(letter)
+        k = min(7, k)
+        if self.board.turn_num == 0:
+          print start, anchor
         self.extend_left(left_part, curr_node, k, anchor, direction, start, False)
     legal_moves = self.curr_legal_moves.items()
     best_move_data = max(legal_moves, key = lambda item:item[1][0]) 
@@ -108,9 +124,11 @@ class Player:
     return best_move_data[0]
   def make_move(self):
     word = self.pick_best_move(self.hand)
-    print word
     score, start, direction  = self.curr_legal_moves[word]
+    print word, start
     curr_coords = start
+    if self.board.turn_num == 0:
+      curr_coords = self.board.get_next_in_direction(curr_coords, direction, 1) 
     num_tiles_used = 0
     for i in xrange(len(word)):
       if curr_coords in self.board.empty_coords:
@@ -123,9 +141,10 @@ class Player:
     self.board.compute_cross_checks()
     self.anchors = self.find_anchors()
     self.board.advance_turn()
-p = Player(hand=['f', 'e', 'n', 'w', 'r', 'i', 'm'])
-for i in xrange(5):
-  print p.hand
+#p = Player(hand=['f', 'e', 'n', 'w', 'r', 'i', 'm'])
+p = Player()
+for i in xrange(5): 
+  print p.hand 
   p.make_move()
   #p.hand = ['f', 'm', 'i','g','u','a','a']
   p.board.print_board()
