@@ -20,6 +20,8 @@ class LetterBag:
       return self.letters
   def check_letter_remains(self, letter):
     return letter in self.letters
+  def num_letters_remaining(self):
+    return len(self.letters)
   def remove_letters(self, num_letters):
     num = num_letters
     removed_letters = []

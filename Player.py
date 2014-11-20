@@ -2,6 +2,7 @@
 from Board import Board
 from LetterBag import LetterBag
 class Player:
+
   def find_anchors(self):
     anchors = set()
     if self.board.get_turn() == 0:
@@ -13,6 +14,7 @@ class Player:
             anchors.add((i,j))
     return anchors
 
+  
   def __init__(self, hand = None, total_points = 0, board = Board(), bag = LetterBag()):
     if hand == None:
       self.bag = LetterBag()
@@ -26,6 +28,7 @@ class Player:
     self.anchors = self.find_anchors() 
     self.curr_legal_moves = {} 
 
+  
   def compute_move_score(self, start, move_word, direction):
     curr_coord = start
     score = 0
@@ -65,15 +68,37 @@ class Player:
       score += 35
     return score 
     
-  def get_left_length(self, board, hand, anchor):
-    length = 0
-    for l in xrange(anchor[0], 0, -1):
-      curr_tile = self.board.get_tile((l,anchor[1]))
-      if curr_tile.get_letter() == None and curr_tile.get_letter() not in self.anchors:
-        length += 1
+  
+  def get_left_part(self, anchor, direction ):
+    k = 0
+    left_part = ""
+    curr_node = self.word_dict.root
+    next_coords = self.board.get_next_in_direction(anchor, direction, -1) 
+    left_placed = False
+    start = anchor
+    while True:
+      if self.board.within_bounds(next_coords):
+        if self.board.get_tile(next_coords).get_letter() == None and next_coords not in self.anchors:
+          if left_placed:
+            break
+          elif not left_placed:
+            k+=1
+            next_coords = self.board.get_next_in_direction(next_coords, direction, -1)
+        elif self.board.get_tile(next_coords).get_letter() != None:
+          left_part = self.board.get_tile(next_coords).get_letter() + left_part
+          start = next_coords
+          left_placed = True
+          next_coords = self.board.get_next_in_direction(next_coords, direction, -1)
+        elif next_coords in self.anchors:
+          break
       else:
         break
+    for letter in left_part:
+      curr_node = curr_node.get_child(letter)
+    k = min(7, k)
+    return k, left_part, curr_node, start
 
+  
   def extend_left(self, left_so_far, node, left_lim, anchor, direction, start, tile_placed):
     self.extend_right(list(left_so_far), node, anchor, direction, start, tile_placed)
     if left_lim > 0:
@@ -87,6 +112,8 @@ class Player:
           self.extend_left(list([left_so_far[0] + child.get_letter(), left_so_far[1] + letter_to_remove]), child, left_lim - 1, anchor, direction, self.board.get_next_in_direction(start, direction, -1), tile_placed)
           self.hand.append(letter_to_remove)
           tile_placed = False
+  
+  
   def extend_right(self, partial_word, node, curr_coords, direction, start_coords, tile_placed):
     curr_tile = self.board.get_tile(curr_coords)
     if curr_tile.get_letter() == None:
@@ -109,42 +136,20 @@ class Player:
         new_coords = self.board.get_next_in_direction(curr_coords, direction, 1)
         if self.board.within_bounds(new_coords): 
           self.extend_right(list([partial_word[0] + curr_tile.get_letter(), partial_word[1] + curr_tile.get_letter()]), node.get_child(curr_tile.get_letter()), new_coords, direction, start_coords, tile_placed)
+
+
   def pick_best_move(self, hand):
     self.anchors = self.find_anchors()
     directions = [(0,1), (1,0)]
     for anchor in self.anchors:
       for direction in directions:
-        k = 0
-        left_part = ""
-        curr_node = self.word_dict.root
-        next_coords = (anchor[0] - direction[0], anchor[1] - direction[1])
-        left_placed = False
-        start = anchor
-        while True:
-          if self.board.within_bounds(next_coords):
-            if self.board.get_tile(next_coords).get_letter() == None and next_coords not in self.anchors:
-              if left_placed:
-                break
-              elif not left_placed:
-                k+=1
-                next_coords = self.board.get_next_in_direction(next_coords, direction, -1)
-            elif self.board.get_tile(next_coords).get_letter() != None:
-              left_part = self.board.get_tile(next_coords).get_letter() + left_part
-              start = next_coords
-              left_placed = True
-              next_coords = self.board.get_next_in_direction(next_coords, direction, -1)
-            elif next_coords in self.anchors:
-              break
-          else:
-            break
-        for letter in left_part:
-          curr_node = curr_node.get_child(letter)
-        k = min(7, k)
+        k, left_part, curr_node,start = self.get_left_part(anchor, direction)
         self.extend_left([left_part, left_part], curr_node, k, anchor, direction, start, False)
     legal_moves = self.curr_legal_moves.items()
     best_move_data = max(legal_moves, key = lambda item:item[1][0]) 
-
     return best_move_data[0]
+
+
   def make_move(self):
     word = self.pick_best_move(self.hand)
     score, start, direction,word_tiles  = self.curr_legal_moves[word]
@@ -161,16 +166,18 @@ class Player:
         self.hand.remove(word_tiles[i])
         num_tiles_used += 1
       curr_coords = self.board.get_next_in_direction(curr_coords, direction, 1) 
-    self.hand += self.bag.remove_letters(num_tiles_used)
+    self.hand += self.bag.remove_letters(min(num_tiles_used, self.bag.num_letters_remaining()))
     self.curr_legal_moves = {}
     self.board.compute_cross_checks()
     self.anchors = self.find_anchors()
     self.board.advance_turn()
-p = Player(hand=['?', 'e', 'n', 'w', 'r', 'i', 'm'])
-#p = Player()
-for i in xrange(3): 
+#p = Player(hand=['?', 'e', 'n', 'w', 'r', 'i', 'm'])
+p = Player()
+for i in xrange(30): 
   print p.hand 
   p.make_move()
   #p.hand = ['f', 'm', 'i','g','u','a','a']
   p.board.print_board()
+  if len(p.hand) == 0:
+    break
 
