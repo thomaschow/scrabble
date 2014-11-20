@@ -87,7 +87,7 @@ class Board:
     self.empty_coords.remove(coords)
   def get_adjacent_placed_tiles(self, coords):
     adjacent_tiles = []
-    for x,y in [(coords[0]+i, coords[1]+j) for i in [-1,0,1] for j in [-1,0,1] if not (i == 0 and j == 0)]:
+    for x,y in [(coords[0]+i, coords[1]+j) for i in [-1,0,1] for j in [-1,0,1] if abs(i) != abs(j)]:
       if self.within_bounds((x,y)) and self.get_tile((x,y)).get_letter() != None:
         adjacent_tiles.append((x,y))
     return adjacent_tiles
