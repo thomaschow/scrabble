@@ -26,7 +26,7 @@ class Board:
     self.tiles[self.BOARD_SIZE / 2][self.BOARD_SIZE / 2].set_multiplier(multipliers["start"]) 
     
   def __init__(self):
-    self.multipliers, letters, letter_values = load.load_game_properties()
+    self.multipliers, letters, self.letter_values = load.load_game_properties()
     self.turn_num = 0
     self.word_dict = Trie("textfiles/wwf.txt")
     self.BOARD_SIZE = 15
@@ -64,15 +64,18 @@ class Board:
     alphabet = string.lowercase
     for coord in self.empty_coords:
       for direction in directions:
+        score = 0
         curr_coord = self.get_next_in_direction(coord, direction, -1)
         left_word = ""
         while self.within_bounds(curr_coord) and curr_coord not in self.empty_coords:
           left_word = self.get_tile(curr_coord).get_letter() + left_word
+          score += self.letter_values[self.get_tile(curr_coord).get_letter()]
           curr_coord = self.get_next_in_direction(curr_coord,direction, -1)
         right_word = ""
         curr_coord = self.get_next_in_direction(coord, direction, 1)
         while self.within_bounds(curr_coord) and curr_coord not in self.empty_coords:
           right_word = right_word + self.get_tile(curr_coord).get_letter()
+          score += self.letter_values[self.get_tile(curr_coord).get_letter()]
           curr_coord = self.get_next_in_direction(curr_coord,direction,1)
         if left_word != "" or right_word != "":
           for i in xrange(len(alphabet)):
@@ -81,6 +84,7 @@ class Board:
         else:
           curr_array.setall(True)
         self.get_tile(coord).fill_cross_check(direction, curr_array)
+        self.get_tile(coord).set_cross_check_score(direction, score)
             
   def place_letter(self, letter, coords):
     self.tiles[coords[0]][coords[1]].set_letter(letter)
@@ -106,3 +110,5 @@ class Board:
     return self.empty_coords
   def get_turn(self):
     return self.turn_num
+  def get_letter_value(self, letter):
+    return self.letter_values[letter]

@@ -29,18 +29,36 @@ class Player:
   def compute_move_score(self, start, move_word, direction):
     curr_coord = start
     score = 0
-    """for letter in move_word:
+    cross_scores = 0
+    word_multipliers = []
+    for letter in move_word:
       #If the letter is already on the board, we just add the letter score, ignoring cross scores and multiplier.
       if self.board.get_tile(curr_coord).get_letter() == letter:
-        pass
+        score += self.board.get_letter_value(letter)
       #If the letter isn't already on the board, we need to compute cross scores and track the multiplier.
-      elif self.board.get_tile(curr_coord).get_letter() == None:"""
-         
-
-
-      
-    
-    return len(move_word) 
+      elif self.board.get_tile(curr_coord).get_letter() == None:
+        curr_letter_score = self.board.get_letter_value(letter)
+        cross_word_score = self.board.get_tile(curr_coord).check_cross_check_score(direction)
+        letter_multiplier = 1
+        rest_of_word_multiplier = 1
+        if self.board.get_tile(curr_coord).get_multiplier() == "double letter":
+          letter_multiplier = 2
+        elif self.board.get_tile(curr_coord).get_multiplier() == "triple letter":
+          letter_multiplier = 3
+        elif self.board.get_tile(curr_coord).get_multiplier() == "double word":
+          letter_multiplier = 2
+          rest_of_word_multiplier = 2
+          word_multipliers.append(2)
+        elif self.board.get_tile(curr_coord).get_multiplier() == "triple word":
+          letter_multiplier = 3
+          rest_of_word_multiplier = 3
+          word_multipliers.append(3)
+        cross_scores += cross_word_score * rest_of_word_multiplier + curr_letter_score * letter_multiplier
+        score +=  curr_letter_score * letter_multiplier
+    for word_multiplier in word_multipliers:
+      score = score * word_multiplier
+    score += cross_scores
+    return score 
     
   def get_left_length(self, board, hand, anchor):
     length = 0

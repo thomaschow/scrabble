@@ -14,7 +14,7 @@ def load_game_properties():
     if reading == "Multipliers":
       multipliers[curr_elem[0]] = curr_elem[1]
     elif reading == "Alphabet":
-      letter_values[curr_elem[0]] = curr_elem[2]
+      letter_values[curr_elem[0].lower()] = int(curr_elem[2])
       letters = letters + [curr_elem[0].lower()] * int(curr_elem[1])
   return multipliers, letters, letter_values
 def load_dictionary(dic):
