@@ -6,6 +6,7 @@ class Tile:
   def __init__(self, multiplier, letter = None):
     self.multiplier = multiplier
     self.letter = letter 
+    self.wild_card = False
     self.cross_check_sets = {(0,1): bitarray(26), (1,0): bitarray(26)}
     self.cross_check_sets[(0,1)].setall(True)
     self.cross_check_sets[(1,0)].setall(True)
@@ -19,6 +20,11 @@ class Tile:
     self.multiplier = multiplier
   def set_letter(self, letter):
     self.letter =letter
+  def set_wild_card(self):
+    self.wild_card = True
+  def is_wild_card(self):
+    return 0 if self.wild_card else 1
+
   def get_cross_check_set(self, direction):
     return self.cross_check_sets[direction]
   def check_cross_check_score(self, direction):

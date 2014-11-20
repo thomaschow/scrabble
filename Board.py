@@ -69,13 +69,13 @@ class Board:
         left_word = ""
         while self.within_bounds(curr_coord) and curr_coord not in self.empty_coords:
           left_word = self.get_tile(curr_coord).get_letter() + left_word
-          score += self.letter_values[self.get_tile(curr_coord).get_letter()]
+          score += self.letter_values[self.get_tile(curr_coord).get_letter()] * self.get_tile(curr_coord).is_wild_card()
           curr_coord = self.get_next_in_direction(curr_coord,direction, -1)
         right_word = ""
         curr_coord = self.get_next_in_direction(coord, direction, 1)
         while self.within_bounds(curr_coord) and curr_coord not in self.empty_coords:
           right_word = right_word + self.get_tile(curr_coord).get_letter()
-          score += self.letter_values[self.get_tile(curr_coord).get_letter()]
+          score += self.letter_values[self.get_tile(curr_coord).get_letter()] * self.get_tile(curr_coord).is_wild_card()
           curr_coord = self.get_next_in_direction(curr_coord,direction,1)
         if left_word != "" or right_word != "":
           for i in xrange(len(alphabet)):
