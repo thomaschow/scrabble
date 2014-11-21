@@ -1,5 +1,5 @@
 def load_game_properties():
-  f = open("textfiles/game_properties.txt", 'r')
+  f = open("../textfiles/game_properties.txt", 'r')
   reading = ""
   curr_elem = []
   multipliers = {}

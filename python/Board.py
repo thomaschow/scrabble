@@ -28,7 +28,7 @@ class Board:
   def __init__(self):
     self.multipliers, letters, self.letter_values = load.load_game_properties()
     self.turn_num = 0
-    self.word_dict = Trie("textfiles/wwf.txt")
+    self.word_dict = Trie("../textfiles/wwf.txt")
     self.BOARD_SIZE = 15
     self.tiles = []
     self.empty_coords = []
