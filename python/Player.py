@@ -28,7 +28,7 @@ class Player:
     self.anchors = self.find_anchors() 
     self.curr_legal_moves = {} 
 
-  
+
   def compute_move_score(self, start, move_word, direction):
     curr_coord = start
     score = 0
@@ -171,6 +171,7 @@ class Player:
     self.board.compute_cross_checks()
     self.anchors = self.find_anchors()
     self.board.advance_turn()
+"""
 #p = Player(hand=['?', 'e', 'n', 'w', 'r', 'i', 'm'])
 p = Player()
 for i in xrange(30): 
@@ -180,4 +181,4 @@ for i in xrange(30):
   p.board.print_board()
   if len(p.hand) == 0:
     break
-
+"""

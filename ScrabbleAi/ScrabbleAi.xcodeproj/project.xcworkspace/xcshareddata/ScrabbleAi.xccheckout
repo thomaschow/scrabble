@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E8B0B8A4-BA12-4EC7-9031-ABCDFFDC5374</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ScrabbleAi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2E875D827E85DACB82BD94520A96378BDB2702FB</key>
+		<string>github.com:thomaschow/scrabble.git</string>
+		<key>FF20535D8A6162FCBA510769F77D4F339BE83338</key>
+		<string>github.com:thomaschow/TrackAndTally.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScrabbleAi/ScrabbleAi.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2E875D827E85DACB82BD94520A96378BDB2702FB</key>
+		<string>../../..</string>
+		<key>FF20535D8A6162FCBA510769F77D4F339BE83338</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:thomaschow/scrabble.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2E875D827E85DACB82BD94520A96378BDB2702FB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FF20535D8A6162FCBA510769F77D4F339BE83338</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2E875D827E85DACB82BD94520A96378BDB2702FB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>scrabble</string>
+		</dict>
+	</array>
+</dict>
+</plist>
