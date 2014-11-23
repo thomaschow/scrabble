@@ -1,0 +1,228 @@
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec1459957820" "-configuration" "Debug"
+=== BUILD TARGET cmTryCompileExec1459957820 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec1794903552" "-configuration" "Debug"
+=== BUILD TARGET cmTryCompileExec1794903552 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec2838233649" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec2838233649 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec1201195217" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec1201195217 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+Determining if the include file sys/types.h exists failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec1163059807" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec1163059807 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+Determining if the include file stdint.h exists failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec2917563618" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec2917563618 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+Determining if the include file stddef.h exists failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec1067559827" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec1067559827 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec3764445902" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec3764445902 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CheckTypeSize/OFF64_T.c:
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec1096838933" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec1096838933 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec76322725" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec76322725 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/Cellar/cmake/3.0.2/bin/cmakexbuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTryCompileExec2253972428" "-configuration" "Release"
+=== BUILD TARGET cmTryCompileExec2253972428 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Release ===
+
+Check dependencies
+target specifies product type 'com.apple.product-type.tool', but there's no such product type for the 'iphoneos' platform
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+
+

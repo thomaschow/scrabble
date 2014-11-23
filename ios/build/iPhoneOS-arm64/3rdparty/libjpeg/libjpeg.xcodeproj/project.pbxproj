@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              932192D193084ECC8F6CEC78 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = C760DD0C515D46EFBE9B9DED /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            884D3A42B6844DD7B03CA66D /* CMake Rules */,
+                     );
+                     dependencies = (
+                            87DE2123B25541C99B7063B9 /* PBXTargetDependency */,
+                            FE0C34B19E224A02AB37A4EA /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              909FA5C824F245B7A2C4DC8A /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = B19E7B2EA62D42BA9233321B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            13EEF8DB261C49B09E5F09F8 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              779ACAD0BD844E0996EFE352 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 721C3E2A96124E389FE5FD24 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            19E7030F4D4C4168978A89BE /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            0D7E698BDA844C338FA6C1DD /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              E8502210078641EBA7EE4B44 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = B0081F353E9C4A05850590E3 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            3914955DADCA4D34AD2E3B6C /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            6D5F41B7E56A414CB0D61707 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+4EF45450FDA54E94A05D0967 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B18BAEE480B54347A5FCBB4E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+25FE02BB4EC244AC9E442796 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jaricom.c */ = {isa = PBXBuildFile; fileRef = 1DE8937B6C804FEE8FE1D416 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jaricom.c */; settings = { COMPILER_FLAGS = ""; }; };
+E7B948449CC347FEB1A06110 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXBuildFile; fileRef = C78AF3465EB745E0B02D04F4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+559DEBD809CA40DCAC25A7F1 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXBuildFile; fileRef = 47BD34CB28CD472C9DCC909A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+73C8D303331D4B91825A47A0 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcarith.c */ = {isa = PBXBuildFile; fileRef = 9A689F89D4FA4BD88D33082F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+142FB1B1DE464FC5AF6AF0EA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXBuildFile; fileRef = 895DEEA89A944B39805DBABF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+41CF8EE4AE634F8DB6E719CF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccolor.c */ = {isa = PBXBuildFile; fileRef = 3A57BCA2615844858E2FE6FC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+85E57FAC925B4164A6B242BC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXBuildFile; fileRef = 2DD4ECCBC97C4DBE8DA381E4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcdctmgr.c */; settings = { COMPILER_FLAGS = "-O1"; }; };
+D4B7B39BFCDB47FA9F84F85C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jchuff.c */ = {isa = PBXBuildFile; fileRef = 1E3BE18BF3874E60A8578815 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jchuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+8EF92A9B8562444A92DC2580 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcinit.c */ = {isa = PBXBuildFile; fileRef = 3FF92A7397A34A7E90174DE9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcinit.c */; settings = { COMPILER_FLAGS = ""; }; };
+BD5455085A0D4D3AB6BDD504 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXBuildFile; fileRef = 82E7629C0E244B0F8109081C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+4EABD0C3AA4F4EBFBA1D0985 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXBuildFile; fileRef = 2E80CFB94E7041CC8B9280FE /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+1FDA1DDBBEC5448EAAE98BAC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXBuildFile; fileRef = A7E191D74165478FBE24F397 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+A0990883525F44A6ACA25B8E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXBuildFile; fileRef = EC7C35FCA80746E3ADC0365A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcomapi.c */; settings = { COMPILER_FLAGS = ""; }; };
+F98FDDCC91F14836B8AC5F14 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jconfig.h */ = {isa = PBXBuildFile; fileRef = 5E50E17DB2AC4A8D9776E5DF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+99E66158262F41819F8B232E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcparam.c */ = {isa = PBXBuildFile; fileRef = FEB9B732D2284654A7754F7F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcparam.c */; settings = { COMPILER_FLAGS = ""; }; };
+78C8B4230B9D4180A34119B4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXBuildFile; fileRef = 55C8EB603A8A4708ACDD33E9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcprepct.c */; settings = { COMPILER_FLAGS = ""; }; };
+C6AA1CF0A2F54A5B91886A82 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcsample.c */ = {isa = PBXBuildFile; fileRef = ECEDE3923CA942AAB4302E72 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+19D3940BD4EA4B7385F60CB6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jctrans.c */ = {isa = PBXBuildFile; fileRef = 9F0533A2A7E54459BBCFFDFC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jctrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+ED2CF4D77BF94EBF82F8FCF7 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXBuildFile; fileRef = 26A22C539C654D988E8C0711 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+5DA32B5ECB744FE39F73EB8B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXBuildFile; fileRef = A172E717BECC48A6BDE924CF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+BAC7C792E8FE4D0496073DF5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdarith.c */ = {isa = PBXBuildFile; fileRef = AE5136B85130488587CA9F08 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+12991B8D44E94E1FBEF91349 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXBuildFile; fileRef = 6083515879014B098DD616BE /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatadst.c */; settings = { COMPILER_FLAGS = ""; }; };
+F189AB4FCE3C4566B85A895A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXBuildFile; fileRef = 7D3AF848300948F0A2D52DC6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatasrc.c */; settings = { COMPILER_FLAGS = ""; }; };
+6843C55AD17D4052ACCB23BB /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXBuildFile; fileRef = DED65EE45CF94E01A563DFB6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+E5FDD5E5606249A59D41A497 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXBuildFile; fileRef = 3F685BF289C34BC893B99D89 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+C83E1ADA9A474BF5A6D32BD4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdct.h */ = {isa = PBXBuildFile; fileRef = 31FCF34AE1D94D588445D521 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdct.h */; settings = { COMPILER_FLAGS = ""; }; };
+7F377A8FCDE7485EB8ECBA0E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXBuildFile; fileRef = CA3669ACE1CD44E083F7CAB3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jddctmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+D8A23F21072241FB9CD57677 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXBuildFile; fileRef = 09FBD35A0EDD4DCFA9583636 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdhuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+A6DCCCBFA73E423797370E93 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdinput.c */ = {isa = PBXBuildFile; fileRef = EF067048CD9D462FBF11ED81 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdinput.c */; settings = { COMPILER_FLAGS = ""; }; };
+84FD295FF21E407A9E998832 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXBuildFile; fileRef = 63E584478D3C467CB04254E3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+ED682171819E4D82A920678A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXBuildFile; fileRef = 33FC4293B5754B02AF1A7E94 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+1C077157D36340688A8138AA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXBuildFile; fileRef = FAF658D382CE46D6A80A51E6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+50ABA3ED1BD945239A729A85 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXBuildFile; fileRef = EBC9F0FA5BAB4F1F8BCA5407 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmerge.c */; settings = { COMPILER_FLAGS = ""; }; };
+50B6D2C3186A4856B3C7C4AC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXBuildFile; fileRef = 628B83F54788493EA1A17837 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdpostct.c */; settings = { COMPILER_FLAGS = ""; }; };
+63453663AD1547D2B708C02E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdsample.c */ = {isa = PBXBuildFile; fileRef = 1C77DAF9F86C466E9FC5FD58 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+9A9144B268D64152A12040D2 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXBuildFile; fileRef = 58195E810910485480784958 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdtrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+B8766C67681F48198A1849AD /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.c */ = {isa = PBXBuildFile; fileRef = 4E948F9B30D24EE89EA12548 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.c */; settings = { COMPILER_FLAGS = ""; }; };
+012F4111C57742BCB0737664 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.h */ = {isa = PBXBuildFile; fileRef = 747C8EAC556A4086BD5185FB /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.h */; settings = { COMPILER_FLAGS = ""; }; };
+4531FD018EFC4E3887DBBC9F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXBuildFile; fileRef = D3C61630729141BCAD27A5A5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+22CF58CE14394012BB1A7C60 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXBuildFile; fileRef = 6E5D32A279DE437AA1AEE2C4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+5D26E7D533A64CF5B2C57934 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXBuildFile; fileRef = 461F37284854438EB3273214 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+1D2D23B5220544C09AD497DF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXBuildFile; fileRef = 01753F557E4D44C38A3D2952 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+2F21A075CFC74A918BC840BC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXBuildFile; fileRef = 395623F5F94040DAA40B69B3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+BEE0426E1C68476BB4BD0B5D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctint.c */ = {isa = PBXBuildFile; fileRef = 582768FFD8AD4B8F94566A66 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+1B991D7E8BFB49899E35A695 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jinclude.h */ = {isa = PBXBuildFile; fileRef = D040D9AB0EA74A2997FA5F5F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jinclude.h */; settings = { COMPILER_FLAGS = ""; }; };
+B09284F65B174F7DAB357249 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXBuildFile; fileRef = C3AC8AA670344329BB407779 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+2D6C2D1B4B134DFF8695074A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXBuildFile; fileRef = 605DB240263545D484E38D4C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemnobs.c */; settings = { COMPILER_FLAGS = ""; }; };
+55A388D069884973AA40C03C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXBuildFile; fileRef = B43F5225D4A54AB9A0EE600A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemsys.h */; settings = { COMPILER_FLAGS = ""; }; };
+F6BACBB8D3564EEFBD8CA13D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXBuildFile; fileRef = FE59E7D474B34BB8A4024165 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmorecfg.h */; settings = { COMPILER_FLAGS = ""; }; };
+37E90349EFD048DD85E27E7B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jpegint.h */ = {isa = PBXBuildFile; fileRef = 63EB8E80DC3240188666D7A8 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jpegint.h */; settings = { COMPILER_FLAGS = ""; }; };
+EF11A0D8C9AC4DAB85B1BF7D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXBuildFile; fileRef = BF206FAFEB604270972EE04D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jpeglib.h */; settings = { COMPILER_FLAGS = ""; }; };
+AC76E338F40940FF92000CEA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant1.c */ = {isa = PBXBuildFile; fileRef = EBA0B274D83846FB8EF7B66D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant1.c */; settings = { COMPILER_FLAGS = ""; }; };
+3565CAAE00434659BBB275A0 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant2.c */ = {isa = PBXBuildFile; fileRef = CC352BEA0FDB44C095FA045A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant2.c */; settings = { COMPILER_FLAGS = ""; }; };
+7BA45061E91D4FB1AC18E5D6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jutils.c */ = {isa = PBXBuildFile; fileRef = B580410A4293466E95014C9A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jutils.c */; settings = { COMPILER_FLAGS = ""; }; };
+6BC5E8C9C28546E6945EBE0D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jversion.h */ = {isa = PBXBuildFile; fileRef = 26B884E661C04DDF93F81E61 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jversion.h */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              3F19B321FDA94FBDBDAAA309 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              2462513E6C8C482FBD4BE5A7 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              DC016AD9B14147E69F7B402F /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              7924FDF600334868B5137F2E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D6F492DEC01A45A885827874 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 7AD4863D8397452888929C03;
+                     remoteInfo = libjpeg;
+              };
+              82037126EF69466DB6F2F884 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D6F492DEC01A45A885827874 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 909FA5C824F245B7A2C4DC8A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              5AC8C4F1ED4843ABAA4B466D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D6F492DEC01A45A885827874 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 932192D193084ECC8F6CEC78;
+                     remoteInfo = ALL_BUILD;
+              };
+              889D23A505D64B2F98187D80 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D6F492DEC01A45A885827874 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 909FA5C824F245B7A2C4DC8A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              F611EDE8855743CBADA98D57 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D6F492DEC01A45A885827874 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 932192D193084ECC8F6CEC78;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+0D8661300FFF470EBDD74C2A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+630ED7B726D045C7ADEBA7DD /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+B18BAEE480B54347A5FCBB4E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+1DE8937B6C804FEE8FE1D416 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jaricom.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jaricom.c"; path = "jaricom.c"; sourceTree = SOURCE_ROOT; };
+C78AF3465EB745E0B02D04F4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapimin.c"; path = "jcapimin.c"; sourceTree = SOURCE_ROOT; };
+47BD34CB28CD472C9DCC909A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapistd.c"; path = "jcapistd.c"; sourceTree = SOURCE_ROOT; };
+9A689F89D4FA4BD88D33082F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcarith.c"; path = "jcarith.c"; sourceTree = SOURCE_ROOT; };
+895DEEA89A944B39805DBABF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccoefct.c"; path = "jccoefct.c"; sourceTree = SOURCE_ROOT; };
+3A57BCA2615844858E2FE6FC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccolor.c"; path = "jccolor.c"; sourceTree = SOURCE_ROOT; };
+2DD4ECCBC97C4DBE8DA381E4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcdctmgr.c"; path = "jcdctmgr.c"; sourceTree = SOURCE_ROOT; };
+1E3BE18BF3874E60A8578815 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jchuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jchuff.c"; path = "jchuff.c"; sourceTree = SOURCE_ROOT; };
+3FF92A7397A34A7E90174DE9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcinit.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcinit.c"; path = "jcinit.c"; sourceTree = SOURCE_ROOT; };
+82E7629C0E244B0F8109081C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmainct.c"; path = "jcmainct.c"; sourceTree = SOURCE_ROOT; };
+2E80CFB94E7041CC8B9280FE /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmarker.c"; path = "jcmarker.c"; sourceTree = SOURCE_ROOT; };
+A7E191D74165478FBE24F397 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmaster.c"; path = "jcmaster.c"; sourceTree = SOURCE_ROOT; };
+EC7C35FCA80746E3ADC0365A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcomapi.c"; path = "jcomapi.c"; sourceTree = SOURCE_ROOT; };
+5E50E17DB2AC4A8D9776E5DF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jconfig.h"; path = "jconfig.h"; sourceTree = SOURCE_ROOT; };
+FEB9B732D2284654A7754F7F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcparam.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcparam.c"; path = "jcparam.c"; sourceTree = SOURCE_ROOT; };
+55C8EB603A8A4708ACDD33E9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcprepct.c"; path = "jcprepct.c"; sourceTree = SOURCE_ROOT; };
+ECEDE3923CA942AAB4302E72 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcsample.c"; path = "jcsample.c"; sourceTree = SOURCE_ROOT; };
+9F0533A2A7E54459BBCFFDFC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jctrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jctrans.c"; path = "jctrans.c"; sourceTree = SOURCE_ROOT; };
+26A22C539C654D988E8C0711 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapimin.c"; path = "jdapimin.c"; sourceTree = SOURCE_ROOT; };
+A172E717BECC48A6BDE924CF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapistd.c"; path = "jdapistd.c"; sourceTree = SOURCE_ROOT; };
+AE5136B85130488587CA9F08 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdarith.c"; path = "jdarith.c"; sourceTree = SOURCE_ROOT; };
+6083515879014B098DD616BE /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatadst.c"; path = "jdatadst.c"; sourceTree = SOURCE_ROOT; };
+7D3AF848300948F0A2D52DC6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatasrc.c"; path = "jdatasrc.c"; sourceTree = SOURCE_ROOT; };
+DED65EE45CF94E01A563DFB6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcoefct.c"; path = "jdcoefct.c"; sourceTree = SOURCE_ROOT; };
+3F685BF289C34BC893B99D89 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcolor.c"; path = "jdcolor.c"; sourceTree = SOURCE_ROOT; };
+31FCF34AE1D94D588445D521 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdct.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jdct.h"; path = "jdct.h"; sourceTree = SOURCE_ROOT; };
+CA3669ACE1CD44E083F7CAB3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jddctmgr.c"; path = "jddctmgr.c"; sourceTree = SOURCE_ROOT; };
+09FBD35A0EDD4DCFA9583636 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdhuff.c"; path = "jdhuff.c"; sourceTree = SOURCE_ROOT; };
+EF067048CD9D462FBF11ED81 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdinput.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdinput.c"; path = "jdinput.c"; sourceTree = SOURCE_ROOT; };
+63E584478D3C467CB04254E3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmainct.c"; path = "jdmainct.c"; sourceTree = SOURCE_ROOT; };
+33FC4293B5754B02AF1A7E94 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmarker.c"; path = "jdmarker.c"; sourceTree = SOURCE_ROOT; };
+FAF658D382CE46D6A80A51E6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmaster.c"; path = "jdmaster.c"; sourceTree = SOURCE_ROOT; };
+EBC9F0FA5BAB4F1F8BCA5407 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmerge.c"; path = "jdmerge.c"; sourceTree = SOURCE_ROOT; };
+628B83F54788493EA1A17837 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdpostct.c"; path = "jdpostct.c"; sourceTree = SOURCE_ROOT; };
+1C77DAF9F86C466E9FC5FD58 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdsample.c"; path = "jdsample.c"; sourceTree = SOURCE_ROOT; };
+58195E810910485480784958 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdtrans.c"; path = "jdtrans.c"; sourceTree = SOURCE_ROOT; };
+4E948F9B30D24EE89EA12548 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jerror.c"; path = "jerror.c"; sourceTree = SOURCE_ROOT; };
+747C8EAC556A4086BD5185FB /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jerror.h"; path = "jerror.h"; sourceTree = SOURCE_ROOT; };
+D3C61630729141BCAD27A5A5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctflt.c"; path = "jfdctflt.c"; sourceTree = SOURCE_ROOT; };
+6E5D32A279DE437AA1AEE2C4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctfst.c"; path = "jfdctfst.c"; sourceTree = SOURCE_ROOT; };
+461F37284854438EB3273214 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctint.c"; path = "jfdctint.c"; sourceTree = SOURCE_ROOT; };
+01753F557E4D44C38A3D2952 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctflt.c"; path = "jidctflt.c"; sourceTree = SOURCE_ROOT; };
+395623F5F94040DAA40B69B3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctfst.c"; path = "jidctfst.c"; sourceTree = SOURCE_ROOT; };
+582768FFD8AD4B8F94566A66 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctint.c"; path = "jidctint.c"; sourceTree = SOURCE_ROOT; };
+D040D9AB0EA74A2997FA5F5F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jinclude.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jinclude.h"; path = "jinclude.h"; sourceTree = SOURCE_ROOT; };
+C3AC8AA670344329BB407779 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemmgr.c"; path = "jmemmgr.c"; sourceTree = SOURCE_ROOT; };
+605DB240263545D484E38D4C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemnobs.c"; path = "jmemnobs.c"; sourceTree = SOURCE_ROOT; };
+B43F5225D4A54AB9A0EE600A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmemsys.h"; path = "jmemsys.h"; sourceTree = SOURCE_ROOT; };
+FE59E7D474B34BB8A4024165 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmorecfg.h"; path = "jmorecfg.h"; sourceTree = SOURCE_ROOT; };
+63EB8E80DC3240188666D7A8 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jpegint.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpegint.h"; path = "jpegint.h"; sourceTree = SOURCE_ROOT; };
+BF206FAFEB604270972EE04D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpeglib.h"; path = "jpeglib.h"; sourceTree = SOURCE_ROOT; };
+EBA0B274D83846FB8EF7B66D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant1.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant1.c"; path = "jquant1.c"; sourceTree = SOURCE_ROOT; };
+CC352BEA0FDB44C095FA045A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant2.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant2.c"; path = "jquant2.c"; sourceTree = SOURCE_ROOT; };
+B580410A4293466E95014C9A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jutils.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jutils.c"; path = "jutils.c"; sourceTree = SOURCE_ROOT; };
+26B884E661C04DDF93F81E61 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jversion.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jversion.h"; path = "jversion.h"; sourceTree = SOURCE_ROOT; };
+D058420A7D6641F1A18156FB /* libjpeg */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblibjpeg.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              EC06AA3919A846E38A588149  = {
+                     isa = PBXGroup;
+                     children = (
+                            3A94CC9A0EDC422AA7E04506 /* Sources */,
+                            5B6A787A9F7842D5A86036FF /* Resources */,
+                            1BC0DFE89CA1440F8F787684 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              3A94CC9A0EDC422AA7E04506 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A3FE7C3F9D6B470EA8B0CE02 /* ALL_BUILD */,
+                            E9737592608C4E1689865902 /* ZERO_CHECK */,
+                            25E2B999B5084EDB9D88856C /* 3rdparty */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              5B6A787A9F7842D5A86036FF /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              A3FE7C3F9D6B470EA8B0CE02 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E57E2456F4884786A44F2B4E /* CMake Rules */,
+                            0D8661300FFF470EBDD74C2A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              E57E2456F4884786A44F2B4E /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              E9737592608C4E1689865902 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            54FEA0A82FB242B3B441393B /* CMake Rules */,
+                            630ED7B726D045C7ADEBA7DD /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              54FEA0A82FB242B3B441393B /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              25E2B999B5084EDB9D88856C /* 3rdparty */ = {
+                     isa = PBXGroup;
+                     children = (
+                            0785D49077A848B0ACD283A0 /* libjpeg */,
+                     );
+                     name = 3rdparty;
+                     sourceTree = "<group>";
+              };
+              0785D49077A848B0ACD283A0 /* libjpeg */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D247F5C703BE40CFBC6299BF /* Source Files */,
+                            8E4031292BDA4C38A8D57AD8 /* Header Files */,
+                            B18BAEE480B54347A5FCBB4E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = libjpeg;
+                     sourceTree = "<group>";
+              };
+              D247F5C703BE40CFBC6299BF /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1DE8937B6C804FEE8FE1D416 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jaricom.c */,
+                            C78AF3465EB745E0B02D04F4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapimin.c */,
+                            47BD34CB28CD472C9DCC909A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapistd.c */,
+                            9A689F89D4FA4BD88D33082F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcarith.c */,
+                            895DEEA89A944B39805DBABF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccoefct.c */,
+                            3A57BCA2615844858E2FE6FC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccolor.c */,
+                            2DD4ECCBC97C4DBE8DA381E4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcdctmgr.c */,
+                            1E3BE18BF3874E60A8578815 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jchuff.c */,
+                            3FF92A7397A34A7E90174DE9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcinit.c */,
+                            82E7629C0E244B0F8109081C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmainct.c */,
+                            2E80CFB94E7041CC8B9280FE /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmarker.c */,
+                            A7E191D74165478FBE24F397 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmaster.c */,
+                            EC7C35FCA80746E3ADC0365A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcomapi.c */,
+                            FEB9B732D2284654A7754F7F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcparam.c */,
+                            55C8EB603A8A4708ACDD33E9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcprepct.c */,
+                            ECEDE3923CA942AAB4302E72 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcsample.c */,
+                            9F0533A2A7E54459BBCFFDFC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jctrans.c */,
+                            26A22C539C654D988E8C0711 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapimin.c */,
+                            A172E717BECC48A6BDE924CF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapistd.c */,
+                            AE5136B85130488587CA9F08 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdarith.c */,
+                            6083515879014B098DD616BE /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatadst.c */,
+                            7D3AF848300948F0A2D52DC6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatasrc.c */,
+                            DED65EE45CF94E01A563DFB6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcoefct.c */,
+                            3F685BF289C34BC893B99D89 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcolor.c */,
+                            CA3669ACE1CD44E083F7CAB3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jddctmgr.c */,
+                            09FBD35A0EDD4DCFA9583636 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdhuff.c */,
+                            EF067048CD9D462FBF11ED81 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdinput.c */,
+                            63E584478D3C467CB04254E3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmainct.c */,
+                            33FC4293B5754B02AF1A7E94 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmarker.c */,
+                            FAF658D382CE46D6A80A51E6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmaster.c */,
+                            EBC9F0FA5BAB4F1F8BCA5407 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmerge.c */,
+                            628B83F54788493EA1A17837 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdpostct.c */,
+                            1C77DAF9F86C466E9FC5FD58 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdsample.c */,
+                            58195E810910485480784958 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdtrans.c */,
+                            4E948F9B30D24EE89EA12548 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.c */,
+                            D3C61630729141BCAD27A5A5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctflt.c */,
+                            6E5D32A279DE437AA1AEE2C4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctfst.c */,
+                            461F37284854438EB3273214 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctint.c */,
+                            01753F557E4D44C38A3D2952 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctflt.c */,
+                            395623F5F94040DAA40B69B3 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctfst.c */,
+                            582768FFD8AD4B8F94566A66 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctint.c */,
+                            C3AC8AA670344329BB407779 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemmgr.c */,
+                            605DB240263545D484E38D4C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemnobs.c */,
+                            EBA0B274D83846FB8EF7B66D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant1.c */,
+                            CC352BEA0FDB44C095FA045A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant2.c */,
+                            B580410A4293466E95014C9A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jutils.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              8E4031292BDA4C38A8D57AD8 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5E50E17DB2AC4A8D9776E5DF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jconfig.h */,
+                            31FCF34AE1D94D588445D521 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdct.h */,
+                            747C8EAC556A4086BD5185FB /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.h */,
+                            D040D9AB0EA74A2997FA5F5F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jinclude.h */,
+                            B43F5225D4A54AB9A0EE600A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemsys.h */,
+                            FE59E7D474B34BB8A4024165 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmorecfg.h */,
+                            63EB8E80DC3240188666D7A8 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jpegint.h */,
+                            BF206FAFEB604270972EE04D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jpeglib.h */,
+                            26B884E661C04DDF93F81E61 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jversion.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              1BC0DFE89CA1440F8F787684 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D058420A7D6641F1A18156FB /* libjpeg */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              7AD4863D8397452888929C03 /* libjpeg */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 897468BB2CB04E55A2202187 /* Build configuration list for PBXNativeTarget "libjpeg" */;
+                     buildPhases = (
+                            4A687F1B6C744556AEAAFA1A /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            64E06EF3F3FE4A6F9BAF2BD3 /* PBXTargetDependency */,
+                     );
+                     name = libjpeg;
+                     productName = libjpeg;
+                     productReference = D058420A7D6641F1A18156FB /* libjpeg */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              D6F492DEC01A45A885827874 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = EB5894CEA13E48A3AB601F62 /* Build configuration list for PBXProject  "libjpeg" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            2462513E6C8C482FBD4BE5A7 /* Debug */,
+                            DC016AD9B14147E69F7B402F /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = EC06AA3919A846E38A588149;
+                     projectDirPath = /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg;
+                     projectRoot = "";
+                     targets = (
+                            932192D193084ECC8F6CEC78 /* ALL_BUILD */,
+                            909FA5C824F245B7A2C4DC8A /* ZERO_CHECK */,
+                            779ACAD0BD844E0996EFE352 /* install */,
+                            7AD4863D8397452888929C03 /* libjpeg */,
+                            E8502210078641EBA7EE4B44 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              621762D6204C45E6A9B0BB04 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              884D3A42B6844DD7B03CA66D /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              FB1812E22F4B4950AD4B3F5F /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              13EEF8DB261C49B09E5F09F8 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              974724FA62914B408BC59C4C /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              19E7030F4D4C4168978A89BE /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              E7AD0BF7D1284A53B23DB81D /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              3914955DADCA4D34AD2E3B6C /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              4A687F1B6C744556AEAAFA1A /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            25FE02BB4EC244AC9E442796 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jaricom.c */,
+                            E7B948449CC347FEB1A06110 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapimin.c */,
+                            559DEBD809CA40DCAC25A7F1 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcapistd.c */,
+                            73C8D303331D4B91825A47A0 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcarith.c */,
+                            142FB1B1DE464FC5AF6AF0EA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccoefct.c */,
+                            41CF8EE4AE634F8DB6E719CF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jccolor.c */,
+                            85E57FAC925B4164A6B242BC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcdctmgr.c */,
+                            D4B7B39BFCDB47FA9F84F85C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jchuff.c */,
+                            8EF92A9B8562444A92DC2580 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcinit.c */,
+                            BD5455085A0D4D3AB6BDD504 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmainct.c */,
+                            4EABD0C3AA4F4EBFBA1D0985 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmarker.c */,
+                            1FDA1DDBBEC5448EAAE98BAC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcmaster.c */,
+                            A0990883525F44A6ACA25B8E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcomapi.c */,
+                            99E66158262F41819F8B232E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcparam.c */,
+                            78C8B4230B9D4180A34119B4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcprepct.c */,
+                            C6AA1CF0A2F54A5B91886A82 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jcsample.c */,
+                            19D3940BD4EA4B7385F60CB6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jctrans.c */,
+                            ED2CF4D77BF94EBF82F8FCF7 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapimin.c */,
+                            5DA32B5ECB744FE39F73EB8B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdapistd.c */,
+                            BAC7C792E8FE4D0496073DF5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdarith.c */,
+                            12991B8D44E94E1FBEF91349 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatadst.c */,
+                            F189AB4FCE3C4566B85A895A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdatasrc.c */,
+                            6843C55AD17D4052ACCB23BB /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcoefct.c */,
+                            E5FDD5E5606249A59D41A497 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdcolor.c */,
+                            7F377A8FCDE7485EB8ECBA0E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jddctmgr.c */,
+                            D8A23F21072241FB9CD57677 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdhuff.c */,
+                            A6DCCCBFA73E423797370E93 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdinput.c */,
+                            84FD295FF21E407A9E998832 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmainct.c */,
+                            ED682171819E4D82A920678A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmarker.c */,
+                            1C077157D36340688A8138AA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmaster.c */,
+                            50ABA3ED1BD945239A729A85 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdmerge.c */,
+                            50B6D2C3186A4856B3C7C4AC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdpostct.c */,
+                            63453663AD1547D2B708C02E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdsample.c */,
+                            9A9144B268D64152A12040D2 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jdtrans.c */,
+                            B8766C67681F48198A1849AD /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jerror.c */,
+                            4531FD018EFC4E3887DBBC9F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctflt.c */,
+                            22CF58CE14394012BB1A7C60 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctfst.c */,
+                            5D26E7D533A64CF5B2C57934 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jfdctint.c */,
+                            1D2D23B5220544C09AD497DF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctflt.c */,
+                            2F21A075CFC74A918BC840BC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctfst.c */,
+                            BEE0426E1C68476BB4BD0B5D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jidctint.c */,
+                            B09284F65B174F7DAB357249 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemmgr.c */,
+                            2D6C2D1B4B134DFF8695074A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jmemnobs.c */,
+                            AC76E338F40940FF92000CEA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant1.c */,
+                            3565CAAE00434659BBB275A0 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jquant2.c */,
+                            7BA45061E91D4FB1AC18E5D6 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg/jutils.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              87DE2123B25541C99B7063B9 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 7AD4863D8397452888929C03 /* libjpeg */;
+                     targetProxy = 7924FDF600334868B5137F2E /* PBXContainerItemProxy */;
+              };
+              FE0C34B19E224A02AB37A4EA /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 909FA5C824F245B7A2C4DC8A /* ZERO_CHECK */;
+                     targetProxy = 82037126EF69466DB6F2F884 /* PBXContainerItemProxy */;
+              };
+              0D7E698BDA844C338FA6C1DD /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 932192D193084ECC8F6CEC78 /* ALL_BUILD */;
+                     targetProxy = 5AC8C4F1ED4843ABAA4B466D /* PBXContainerItemProxy */;
+              };
+              64E06EF3F3FE4A6F9BAF2BD3 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 909FA5C824F245B7A2C4DC8A /* ZERO_CHECK */;
+                     targetProxy = 889D23A505D64B2F98187D80 /* PBXContainerItemProxy */;
+              };
+              6D5F41B7E56A414CB0D61707 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 932192D193084ECC8F6CEC78 /* ALL_BUILD */;
+                     targetProxy = F611EDE8855743CBADA98D57 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              47861D1F68D74D76A80F9A44 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg/build";
+                     };
+                     name = Debug;
+              };
+              759CB16CAECC4AFDA8EA66EF /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg/build";
+                     };
+                     name = Release;
+              };
+              8C28166CB32142178DDEA1A9 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              D100F12E35C84297B86542C2 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              687EAB6B22144F76989F22A4 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              F27D4C8CD33B4AC9A06E6FC6 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              D0E4C2C045BA4EE4BA2090AE /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              833C9464B03742AA86680B61 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B820D0C1C06147A48968CADC /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC         -DDEBUG -D_DEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              4E9F4C5F74D647AE9AEE2673 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              523A56D042BF4794B51173F9 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              72CE92F34F04418098F3044C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libjpeg, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-arm64/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              EB5894CEA13E48A3AB601F62 /* Build configuration list for PBXProject  "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            47861D1F68D74D76A80F9A44 /* Debug */,
+                            759CB16CAECC4AFDA8EA66EF /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              C760DD0C515D46EFBE9B9DED /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            8C28166CB32142178DDEA1A9 /* Debug */,
+                            D100F12E35C84297B86542C2 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B19E7B2EA62D42BA9233321B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            687EAB6B22144F76989F22A4 /* Debug */,
+                            F27D4C8CD33B4AC9A06E6FC6 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              721C3E2A96124E389FE5FD24 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            D0E4C2C045BA4EE4BA2090AE /* Debug */,
+                            833C9464B03742AA86680B61 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              897468BB2CB04E55A2202187 /* Build configuration list for PBXNativeTarget "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B820D0C1C06147A48968CADC /* Debug */,
+                            4E9F4C5F74D647AE9AEE2673 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B0081F353E9C4A05850590E3 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            523A56D042BF4794B51173F9 /* Debug */,
+                            72CE92F34F04418098F3044C /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = D6F492DEC01A45A885827874;
+}

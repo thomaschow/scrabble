@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              EB64D3AE9B2B4388B03B8D87 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 6843E6E3CC734C0F88165481 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            794C70CFC4F04CCD8F0ECC59 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            BD99038F70324C9FB56BF72C /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              8B1AB384BFAB4FC5936E861D /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = ED8AA3ADAE6B4AE39C3BAB9F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            24C552B88AE44AE8A7D1E7B4 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              F0C3E6BA13884C2DB07BDCB6 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = A56CB777DDA6440FA32D2274 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            90B89FDF8C0345EFB5862A5E /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            542A28DFC8204BD6997CD49D /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              EADAFF74335C45CD9BAF421F /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 5D45B7524DFF44E5BC7BD64B /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            03C9F55A8E7740019AB30AC9 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            6FFE053CD4684805BD625BAC /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+              57BBE694A3F64417A2F7C298 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              9B7383142B184F068560B2BE /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              EEFDEF06DB8E487DB0FF412A /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              0D8A0DEFE4634F2DA65A5142 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F833E61BA4584A58BBDFD80C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 8B1AB384BFAB4FC5936E861D;
+                     remoteInfo = ZERO_CHECK;
+              };
+              DEF21214019C4BD29582F7CC /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F833E61BA4584A58BBDFD80C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EB64D3AE9B2B4388B03B8D87;
+                     remoteInfo = ALL_BUILD;
+              };
+              160253715724448C85C07992 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F833E61BA4584A58BBDFD80C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EB64D3AE9B2B4388B03B8D87;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+4314C3294F7148E198018A48 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/doc/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+DBD313077AEA4F819D09CDB8 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/doc/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              C387C79440564FA7A931E0B1  = {
+                     isa = PBXGroup;
+                     children = (
+                            308E67B06A4B4DBF96CE2537 /* Sources */,
+                            583ADE1088CF451FA41806B5 /* Resources */,
+                            1F0F7F2C2F78485EA5EEB5AE /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              308E67B06A4B4DBF96CE2537 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            0A9E4B2E2A684C568FCBBC3F /* ALL_BUILD */,
+                            3BB1BC1DE7E14B75A243FD47 /* ZERO_CHECK */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              583ADE1088CF451FA41806B5 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              0A9E4B2E2A684C568FCBBC3F /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            920D5347E7514178BE119BB9 /* CMake Rules */,
+                            4314C3294F7148E198018A48 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/doc/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              920D5347E7514178BE119BB9 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              3BB1BC1DE7E14B75A243FD47 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            05DC6C326FDF4112A9B33703 /* CMake Rules */,
+                            DBD313077AEA4F819D09CDB8 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/doc/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              05DC6C326FDF4112A9B33703 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              1F0F7F2C2F78485EA5EEB5AE /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+              F833E61BA4584A58BBDFD80C /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = AEEB0C57C51F462780E65E52 /* Build configuration list for PBXProject  "opencv_docs" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            9B7383142B184F068560B2BE /* Debug */,
+                            EEFDEF06DB8E487DB0FF412A /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = C387C79440564FA7A931E0B1;
+                     projectDirPath = /Users/thomaschow/Documents/workspace/scrabble/opencv/doc;
+                     projectRoot = "";
+                     targets = (
+                            EB64D3AE9B2B4388B03B8D87 /* ALL_BUILD */,
+                            8B1AB384BFAB4FC5936E861D /* ZERO_CHECK */,
+                            F0C3E6BA13884C2DB07BDCB6 /* install */,
+                            EADAFF74335C45CD9BAF421F /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              61DFBD2B7F1948C5949E1C6D /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              794C70CFC4F04CCD8F0ECC59 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              02FD22E6314242FA816E5490 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              24C552B88AE44AE8A7D1E7B4 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              9D5B1051F44E4A7380102672 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              90B89FDF8C0345EFB5862A5E /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              2B0F5EFF16724B09A62D6A37 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              03C9F55A8E7740019AB30AC9 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              BD99038F70324C9FB56BF72C /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 8B1AB384BFAB4FC5936E861D /* ZERO_CHECK */;
+                     targetProxy = 0D8A0DEFE4634F2DA65A5142 /* PBXContainerItemProxy */;
+              };
+              542A28DFC8204BD6997CD49D /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EB64D3AE9B2B4388B03B8D87 /* ALL_BUILD */;
+                     targetProxy = DEF21214019C4BD29582F7CC /* PBXContainerItemProxy */;
+              };
+              6FFE053CD4684805BD625BAC /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EB64D3AE9B2B4388B03B8D87 /* ALL_BUILD */;
+                     targetProxy = 160253715724448C85C07992 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              FE64E3B3F7D542B49117CE2E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc/build";
+                     };
+                     name = Debug;
+              };
+              90157CC1C626478CBF6B0B4A /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc/build";
+                     };
+                     name = Release;
+              };
+              C3E854BD96934BF4ACB6B347 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              4B44149240CE4D7AA3043A27 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              0958F6628CC94728948E1EA1 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              9F8A9DA62DB44B17A1D536F8 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              0C3B782CE2E8471FABB7519A /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              062D14B8F5694285ADD1621E /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              589EB6A8A5414C7795EF6212 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              90995AC4B05B4C27B1730A3F /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneOS-armv7/doc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              AEEB0C57C51F462780E65E52 /* Build configuration list for PBXProject  "opencv_docs" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            FE64E3B3F7D542B49117CE2E /* Debug */,
+                            90157CC1C626478CBF6B0B4A /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              6843E6E3CC734C0F88165481 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            C3E854BD96934BF4ACB6B347 /* Debug */,
+                            4B44149240CE4D7AA3043A27 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              ED8AA3ADAE6B4AE39C3BAB9F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            0958F6628CC94728948E1EA1 /* Debug */,
+                            9F8A9DA62DB44B17A1D536F8 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              A56CB777DDA6440FA32D2274 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            0C3B782CE2E8471FABB7519A /* Debug */,
+                            062D14B8F5694285ADD1621E /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              5D45B7524DFF44E5BC7BD64B /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            589EB6A8A5414C7795EF6212 /* Debug */,
+                            90995AC4B05B4C27B1730A3F /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = F833E61BA4584A58BBDFD80C;
+}

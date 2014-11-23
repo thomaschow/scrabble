@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              E2F3F311F5B544DE903AD7BC /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 25280D1171094287AEC34731 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            63C002AFCEEE40908BA39842 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            A86834338F79465D94486EF3 /* PBXTargetDependency */,
+                            AD500A13DFDF4C5B97F02754 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              5D224145104B4C81A4EEB45E /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D9992D8A8398419D8B5DCC01 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            116D456ED2B9415D91015965 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              87E72AC594A848FBB9EEFC5E /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = B1E8A8B139304C1BB3F93C05 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            F9F70162881440E28405B876 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            45812155BBA94566AC1D739B /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              B52C9B42E52C47AF82085A67 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = E9F1B77482D9410DAFB1C6B0 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            875EAC0C9B0949CE9BBD8E09 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            50CDD2297069400498E85A3E /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+CE288F5586DA4939B89BCA71 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7307275E1EAA4532A1FE62C8 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+76973190D01648C582865D51 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.c */ = {isa = PBXBuildFile; fileRef = 682AF647701D4152A4B3CE40 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.c */; settings = { COMPILER_FLAGS = ""; }; };
+6530C50D6C57427BBDFF39EA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.h */ = {isa = PBXBuildFile; fileRef = 4BB9574449D446ECADB1749A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.h */; settings = { COMPILER_FLAGS = ""; }; };
+8B466A93A578454ABD3A120D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngconf.h */ = {isa = PBXBuildFile; fileRef = 9421D0E3EBE645BCBDDD2297 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngconf.h */; settings = { COMPILER_FLAGS = ""; }; };
+3CBF51B77945468A89525637 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngdebug.h */ = {isa = PBXBuildFile; fileRef = ED4718E575D441BDB1F48A0D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngdebug.h */; settings = { COMPILER_FLAGS = ""; }; };
+2204697FF55A49029DC66263 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngerror.c */ = {isa = PBXBuildFile; fileRef = 8A809F5DD6C042C48FE90090 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngerror.c */; settings = { COMPILER_FLAGS = ""; }; };
+87AA7CA4CC594615A022E05F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngget.c */ = {isa = PBXBuildFile; fileRef = E9204335C1614D58A5615AD9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngget.c */; settings = { COMPILER_FLAGS = ""; }; };
+183DAA6DF1164D6DB2B5284B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pnginfo.h */ = {isa = PBXBuildFile; fileRef = 6F363557EAC34EB5AC2700FA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pnginfo.h */; settings = { COMPILER_FLAGS = ""; }; };
+BC4E7EC9E81C4953A6A83A80 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pnglibconf.h */ = {isa = PBXBuildFile; fileRef = B0A645DABE604E91BE9ED0E5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pnglibconf.h */; settings = { COMPILER_FLAGS = ""; }; };
+854106DF7E8148FBB075B218 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngmem.c */ = {isa = PBXBuildFile; fileRef = 9AF75A9F9B734ECEA43E940F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngmem.c */; settings = { COMPILER_FLAGS = ""; }; };
+E3ED4CBDCEFB4B1D8109F1A9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpread.c */ = {isa = PBXBuildFile; fileRef = A71779F0685E4DE9ADEEF60B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpread.c */; settings = { COMPILER_FLAGS = ""; }; };
+47F704D3AD5B470F8EFFC8B9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpriv.h */ = {isa = PBXBuildFile; fileRef = 39B198A48BC44BC7819AB8B2 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpriv.h */; settings = { COMPILER_FLAGS = ""; }; };
+FCBD5A3585664D8BA0004E67 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngread.c */ = {isa = PBXBuildFile; fileRef = B848873453AA4620AF96E34A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngread.c */; settings = { COMPILER_FLAGS = ""; }; };
+2D40BE9374BA4CBB930A52D4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrio.c */ = {isa = PBXBuildFile; fileRef = 44999A6461E34EEFB812A61A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrio.c */; settings = { COMPILER_FLAGS = ""; }; };
+9A4BB5F1AD6C41518DD81439 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrtran.c */ = {isa = PBXBuildFile; fileRef = 4E3B7F5D99DF470B9E0E335B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrtran.c */; settings = { COMPILER_FLAGS = ""; }; };
+8C5BD891C6CC4782822E624C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrutil.c */ = {isa = PBXBuildFile; fileRef = 443E296F00464CCE9C48B94E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrutil.c */; settings = { COMPILER_FLAGS = ""; }; };
+75F9EE7B81C548209FAE6952 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngset.c */ = {isa = PBXBuildFile; fileRef = AD997092BDE849BD81F19279 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngset.c */; settings = { COMPILER_FLAGS = ""; }; };
+A0A95D75167A488784435CAC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngstruct.h */ = {isa = PBXBuildFile; fileRef = 8394825E5BBC4645B963AA94 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngstruct.h */; settings = { COMPILER_FLAGS = ""; }; };
+784BF441CBDE4C54AAAA6EDF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngtrans.c */ = {isa = PBXBuildFile; fileRef = F446F9DFBCCD4DF6B84E06C9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngtrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+3C538619E47B4DA481F9C6E4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwio.c */ = {isa = PBXBuildFile; fileRef = 6A636D330B5E46EEB9165E7C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwio.c */; settings = { COMPILER_FLAGS = ""; }; };
+BDDDC84A3AFA46518DBF039C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwrite.c */ = {isa = PBXBuildFile; fileRef = CD17D6FD27FA420F824870FC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwrite.c */; settings = { COMPILER_FLAGS = ""; }; };
+F49D71753F094F7D8489EBF9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwtran.c */ = {isa = PBXBuildFile; fileRef = 636C4A56764C4A8F997D1C91 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwtran.c */; settings = { COMPILER_FLAGS = ""; }; };
+50C2D71A573046DBBED54F7B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwutil.c */ = {isa = PBXBuildFile; fileRef = D95BA71F5FB441858E3CA42A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwutil.c */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              1ECE0F4A3F4E45ECBCD9C11C /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              04394DA5F57D48AFA1387A16 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              2CC062C6A2BA4AC195F18523 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              F24E39D9F59F440BA34984BA /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5C7BBDCCED58405993CBDE3B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5D224145104B4C81A4EEB45E;
+                     remoteInfo = ZERO_CHECK;
+              };
+              3D96227639A649549E3ED4C8 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5C7BBDCCED58405993CBDE3B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EA1635CC38F34AAFB840417D;
+                     remoteInfo = libpng;
+              };
+              C7E99662ABF3439BB2C59FEE /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5C7BBDCCED58405993CBDE3B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E2F3F311F5B544DE903AD7BC;
+                     remoteInfo = ALL_BUILD;
+              };
+              74E988FA615E45DA9A3252EB /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5C7BBDCCED58405993CBDE3B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5D224145104B4C81A4EEB45E;
+                     remoteInfo = ZERO_CHECK;
+              };
+              F8A3FDAEAA364F248D1AEFBB /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5C7BBDCCED58405993CBDE3B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E2F3F311F5B544DE903AD7BC;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+AC5BABF9F2484974B4D30244 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+47EEFCB63BD24D878813A4A5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+7307275E1EAA4532A1FE62C8 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+682AF647701D4152A4B3CE40 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "png.c"; path = "png.c"; sourceTree = SOURCE_ROOT; };
+4BB9574449D446ECADB1749A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "png.h"; path = "png.h"; sourceTree = SOURCE_ROOT; };
+9421D0E3EBE645BCBDDD2297 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngconf.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngconf.h"; path = "pngconf.h"; sourceTree = SOURCE_ROOT; };
+ED4718E575D441BDB1F48A0D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngdebug.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngdebug.h"; path = "pngdebug.h"; sourceTree = SOURCE_ROOT; };
+8A809F5DD6C042C48FE90090 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngerror.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngerror.c"; path = "pngerror.c"; sourceTree = SOURCE_ROOT; };
+E9204335C1614D58A5615AD9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngget.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngget.c"; path = "pngget.c"; sourceTree = SOURCE_ROOT; };
+6F363557EAC34EB5AC2700FA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pnginfo.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pnginfo.h"; path = "pnginfo.h"; sourceTree = SOURCE_ROOT; };
+B0A645DABE604E91BE9ED0E5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pnglibconf.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pnglibconf.h"; path = "pnglibconf.h"; sourceTree = SOURCE_ROOT; };
+9AF75A9F9B734ECEA43E940F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngmem.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngmem.c"; path = "pngmem.c"; sourceTree = SOURCE_ROOT; };
+A71779F0685E4DE9ADEEF60B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpread.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngpread.c"; path = "pngpread.c"; sourceTree = SOURCE_ROOT; };
+39B198A48BC44BC7819AB8B2 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpriv.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngpriv.h"; path = "pngpriv.h"; sourceTree = SOURCE_ROOT; };
+B848873453AA4620AF96E34A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngread.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngread.c"; path = "pngread.c"; sourceTree = SOURCE_ROOT; };
+44999A6461E34EEFB812A61A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrio.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrio.c"; path = "pngrio.c"; sourceTree = SOURCE_ROOT; };
+4E3B7F5D99DF470B9E0E335B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrtran.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrtran.c"; path = "pngrtran.c"; sourceTree = SOURCE_ROOT; };
+443E296F00464CCE9C48B94E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrutil.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrutil.c"; path = "pngrutil.c"; sourceTree = SOURCE_ROOT; };
+AD997092BDE849BD81F19279 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngset.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngset.c"; path = "pngset.c"; sourceTree = SOURCE_ROOT; };
+8394825E5BBC4645B963AA94 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngstruct.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngstruct.h"; path = "pngstruct.h"; sourceTree = SOURCE_ROOT; };
+F446F9DFBCCD4DF6B84E06C9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngtrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngtrans.c"; path = "pngtrans.c"; sourceTree = SOURCE_ROOT; };
+6A636D330B5E46EEB9165E7C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwio.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwio.c"; path = "pngwio.c"; sourceTree = SOURCE_ROOT; };
+CD17D6FD27FA420F824870FC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwrite.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwrite.c"; path = "pngwrite.c"; sourceTree = SOURCE_ROOT; };
+636C4A56764C4A8F997D1C91 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwtran.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwtran.c"; path = "pngwtran.c"; sourceTree = SOURCE_ROOT; };
+D95BA71F5FB441858E3CA42A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwutil.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwutil.c"; path = "pngwutil.c"; sourceTree = SOURCE_ROOT; };
+F361357E0452413781AFC35E /* libpng */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblibpng.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              4E44B7CBA5C5431BB99A4209  = {
+                     isa = PBXGroup;
+                     children = (
+                            A1E381CD0C4A4A83B869D5E7 /* Sources */,
+                            91584660394F4A6EA392F6B5 /* Resources */,
+                            6807C64C4D2A440EB5C8C8A5 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              A1E381CD0C4A4A83B869D5E7 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E0F80A37D156446587545647 /* ALL_BUILD */,
+                            67DFE87C9E954C318C0BEDF1 /* ZERO_CHECK */,
+                            C2C2871D24A34CFB8365C14D /* 3rdparty */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              91584660394F4A6EA392F6B5 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              E0F80A37D156446587545647 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            BED2DF5B70F54F14B99452AD /* CMake Rules */,
+                            AC5BABF9F2484974B4D30244 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              BED2DF5B70F54F14B99452AD /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              67DFE87C9E954C318C0BEDF1 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            6FE42C7B83FA42BAAE0BA364 /* CMake Rules */,
+                            47EEFCB63BD24D878813A4A5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              6FE42C7B83FA42BAAE0BA364 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              C2C2871D24A34CFB8365C14D /* 3rdparty */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8AAFD113183E4A1B97DE5DD3 /* libpng */,
+                     );
+                     name = 3rdparty;
+                     sourceTree = "<group>";
+              };
+              8AAFD113183E4A1B97DE5DD3 /* libpng */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7C8F4FD98516457997DEC1D0 /* Source Files */,
+                            D9F09C032D324735AE6521D3 /* Header Files */,
+                            7307275E1EAA4532A1FE62C8 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = libpng;
+                     sourceTree = "<group>";
+              };
+              7C8F4FD98516457997DEC1D0 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            682AF647701D4152A4B3CE40 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.c */,
+                            8A809F5DD6C042C48FE90090 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngerror.c */,
+                            E9204335C1614D58A5615AD9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngget.c */,
+                            9AF75A9F9B734ECEA43E940F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngmem.c */,
+                            A71779F0685E4DE9ADEEF60B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpread.c */,
+                            B848873453AA4620AF96E34A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngread.c */,
+                            44999A6461E34EEFB812A61A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrio.c */,
+                            4E3B7F5D99DF470B9E0E335B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrtran.c */,
+                            443E296F00464CCE9C48B94E /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrutil.c */,
+                            AD997092BDE849BD81F19279 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngset.c */,
+                            F446F9DFBCCD4DF6B84E06C9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngtrans.c */,
+                            6A636D330B5E46EEB9165E7C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwio.c */,
+                            CD17D6FD27FA420F824870FC /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwrite.c */,
+                            636C4A56764C4A8F997D1C91 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwtran.c */,
+                            D95BA71F5FB441858E3CA42A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwutil.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              D9F09C032D324735AE6521D3 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4BB9574449D446ECADB1749A /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.h */,
+                            9421D0E3EBE645BCBDDD2297 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngconf.h */,
+                            ED4718E575D441BDB1F48A0D /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngdebug.h */,
+                            6F363557EAC34EB5AC2700FA /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pnginfo.h */,
+                            B0A645DABE604E91BE9ED0E5 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pnglibconf.h */,
+                            39B198A48BC44BC7819AB8B2 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpriv.h */,
+                            8394825E5BBC4645B963AA94 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngstruct.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              6807C64C4D2A440EB5C8C8A5 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F361357E0452413781AFC35E /* libpng */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              EA1635CC38F34AAFB840417D /* libpng */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 84D69DB833E541C6B42B6A26 /* Build configuration list for PBXNativeTarget "libpng" */;
+                     buildPhases = (
+                            1E095D6CA5DF4B3BAF0C8012 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            BCA00554957740489C8E035C /* PBXTargetDependency */,
+                     );
+                     name = libpng;
+                     productName = libpng;
+                     productReference = F361357E0452413781AFC35E /* libpng */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              5C7BBDCCED58405993CBDE3B /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 050E11A0F1E54E8F904044D1 /* Build configuration list for PBXProject  "libpng" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            04394DA5F57D48AFA1387A16 /* Debug */,
+                            2CC062C6A2BA4AC195F18523 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 4E44B7CBA5C5431BB99A4209;
+                     projectDirPath = /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng;
+                     projectRoot = "";
+                     targets = (
+                            E2F3F311F5B544DE903AD7BC /* ALL_BUILD */,
+                            5D224145104B4C81A4EEB45E /* ZERO_CHECK */,
+                            87E72AC594A848FBB9EEFC5E /* install */,
+                            EA1635CC38F34AAFB840417D /* libpng */,
+                            B52C9B42E52C47AF82085A67 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              02B00FA334ED40978B02984C /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              63C002AFCEEE40908BA39842 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              F4BA9FC367184480BFFC9B00 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              116D456ED2B9415D91015965 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              2C9604BD6F164959972A3678 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              F9F70162881440E28405B876 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              1867C390605041838F727631 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              875EAC0C9B0949CE9BBD8E09 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng -f /Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              1E095D6CA5DF4B3BAF0C8012 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            76973190D01648C582865D51 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/png.c */,
+                            2204697FF55A49029DC66263 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngerror.c */,
+                            87AA7CA4CC594615A022E05F /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngget.c */,
+                            854106DF7E8148FBB075B218 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngmem.c */,
+                            E3ED4CBDCEFB4B1D8109F1A9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngpread.c */,
+                            FCBD5A3585664D8BA0004E67 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngread.c */,
+                            2D40BE9374BA4CBB930A52D4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrio.c */,
+                            9A4BB5F1AD6C41518DD81439 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrtran.c */,
+                            8C5BD891C6CC4782822E624C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngrutil.c */,
+                            75F9EE7B81C548209FAE6952 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngset.c */,
+                            784BF441CBDE4C54AAAA6EDF /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngtrans.c */,
+                            3C538619E47B4DA481F9C6E4 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwio.c */,
+                            BDDDC84A3AFA46518DBF039C /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwrite.c */,
+                            F49D71753F094F7D8489EBF9 /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwtran.c */,
+                            50C2D71A573046DBBED54F7B /* /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng/pngwutil.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              A86834338F79465D94486EF3 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5D224145104B4C81A4EEB45E /* ZERO_CHECK */;
+                     targetProxy = F24E39D9F59F440BA34984BA /* PBXContainerItemProxy */;
+              };
+              AD500A13DFDF4C5B97F02754 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EA1635CC38F34AAFB840417D /* libpng */;
+                     targetProxy = 3D96227639A649549E3ED4C8 /* PBXContainerItemProxy */;
+              };
+              45812155BBA94566AC1D739B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E2F3F311F5B544DE903AD7BC /* ALL_BUILD */;
+                     targetProxy = C7E99662ABF3439BB2C59FEE /* PBXContainerItemProxy */;
+              };
+              BCA00554957740489C8E035C /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5D224145104B4C81A4EEB45E /* ZERO_CHECK */;
+                     targetProxy = 74E988FA615E45DA9A3252EB /* PBXContainerItemProxy */;
+              };
+              50CDD2297069400498E85A3E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E2F3F311F5B544DE903AD7BC /* ALL_BUILD */;
+                     targetProxy = F8A3FDAEAA364F248D1AEFBB /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              537DD54E6ADA4040A1E5F704 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng/build";
+                     };
+                     name = Debug;
+              };
+              F0F47F7C7CF0459A98655731 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng/build";
+                     };
+                     name = Release;
+              };
+              48AFB8BCF39B43A493E03547 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              99DBC44A0D8742DB9FD1EC39 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              BD52A8C54DA14F42965A8B1D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              87D48D8936A14C3CA088741E /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              A5915753963B41F497CDE866 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              63C3F7F4E1D640019E358D07 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              A172F9EF916848E392CCAB77 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC         -DDEBUG -D_DEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libpng;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              8F84D83A583B4BFE84F6861F /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LIBTOOLFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libpng;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              7EDE480956DE43678748D7D1 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E21C44814B20415282F5EAC2 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/zlib", /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/zlib, /Users/thomaschow/Documents/workspace/scrabble/opencv/3rdparty/libpng, "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/thomaschow/Documents/workspace/scrabble/ios/build/iPhoneSimulator-i386/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              050E11A0F1E54E8F904044D1 /* Build configuration list for PBXProject  "libpng" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            537DD54E6ADA4040A1E5F704 /* Debug */,
+                            F0F47F7C7CF0459A98655731 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              25280D1171094287AEC34731 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            48AFB8BCF39B43A493E03547 /* Debug */,
+                            99DBC44A0D8742DB9FD1EC39 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D9992D8A8398419D8B5DCC01 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            BD52A8C54DA14F42965A8B1D /* Debug */,
+                            87D48D8936A14C3CA088741E /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B1E8A8B139304C1BB3F93C05 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            A5915753963B41F497CDE866 /* Debug */,
+                            63C3F7F4E1D640019E358D07 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              84D69DB833E541C6B42B6A26 /* Build configuration list for PBXNativeTarget "libpng" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            A172F9EF916848E392CCAB77 /* Debug */,
+                            8F84D83A583B4BFE84F6861F /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              E9F1B77482D9410DAFB1C6B0 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            7EDE480956DE43678748D7D1 /* Debug */,
+                            E21C44814B20415282F5EAC2 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 5C7BBDCCED58405993CBDE3B;
+}
